@@ -1,0 +1,190 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set the background color */
+  body {
+    background: linear-gradient(to bottom, #87CEEB, #1E90FF); /* Warna biru laut */
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /* Center the login section vertically */
+  #login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+  }
+  
+  /* Style the container */
+  .container {
+    background-color: #fff; /* Warna latar belakang putih */
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 70px;
+    text-align: center;
+    max-width: 400px;
+  }
+  
+  /* Style the title */
+  .container h2 {
+    font-size: 24px;
+    color: #333; /* Warna teks hitam */
+    margin-bottom: 15px;
+  }
+  
+  /* Style the subtitle */
+  .container p {
+    font-size: 18px;
+    color: #555; /* Warna teks abu-abu */
+    margin-bottom: 20px;
+  }
+  
+  /* Style the input fields */
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc; /* Warna border abu-abu */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Style the password toggle icon */
+  .toggle-password {
+    cursor: pointer;
+    margin-bottom: 20px; /* Tambahkan margin bawah */
+    display: block;
+  }
+  
+  /* Style the login button */
+  button-login {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to right, #005b96, #00a8e8); /* Gradien biru laut */
+    border: none;
+    border-radius: 5px;
+    color: #fff; /* Warna teks putih */
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+    margin-top: 10px;
+  }
+
+  button-login a {
+    color: #fff; /* Atur warna teks tautan sesuai kebutuhan (putih) */
+    text-decoration: none; /* Hapus garis bawah tautan */
+  }
+  button-panduan {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to right, #005b96, #00a8e8); /* Gradien biru laut */
+    border: none;
+    border-radius: 5px;
+    color: #fff; /* Warna teks putih */
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+    margin-top: 10px;
+    }
+
+    button-panduan a {
+      color: #fff; /* Atur warna teks tautan sesuai kebutuhan (putih) */
+      text-decoration: none; /* Hapus garis bawah tautan */
+    }
+  
+  /* Style the login button on hover */
+  button:hover {
+    background: linear-gradient(to right, #00a8e8, #005b96); /* Gradien biru laut terbalik */
+    
+    transition: .5s;  
+  }
+ 
+  /* CSS untuk footer */
+  .footer {
+    background-color: #0080c0; /* Warna latar belakang footer */
+    color: #fff; /* Warna teks footer */
+    text-align: center;
+    padding: 10px 0; /* Padding atas dan bawah untuk ruang di dalam footer */
+    width: 100%; /* Lebar footer 100% dari lebar layar */
+    position: fixed; /* Footer ditempel di bagian bawah layar */
+    bottom: 0; /* Footer di tempatkan di bagian bawah */
+    left: 0; /* Footer ditempatkan di kiri */
+  }
+
+/* Style teks copyright */
+.footer p {
+  margin: 0; /* Hapus margin bawaan */
+  font-size: 14px;
+}
+
+/* Style teks link copyright (jika diperlukan) */
+.footer a {
+  color: #fff; /* Warna teks link */
+  text-decoration: none; /* Hapus garis bawah link */
+}
+
+.box {
+  position: relative;
+  }
+
+/* CSS untuk logo di atas kiri */
+.box .logo-left {
+  position: absolute;
+  top: 10px; /* Atur jarak dari atas */
+  left: 10px; /* Atur jarak dari kiri */
+}
+
+/* CSS untuk logo di atas kanan */
+.box .logo-right {
+  position: absolute;
+  top: 10px; /* Atur jarak dari atas */
+  right: 10px; /* Atur jarak dari kanan */
+}
+
+.box .logo-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* CSS untuk mengatur style logo (sesuaikan dengan kebutuhan) */
+.box .logo-left img {
+  max-width: 100px; /* Sesuaikan ukuran logo */
+  height: auto;
+  background: #0080c0, #87CEEB;
+  transition: .5s;
+}
+.box .logo-right img {
+  max-width: 60px; /* Sesuaikan ukuran logo */
+  height: auto;
+  background: #0080c0, #87CEEB;
+  transition: .5s;
+}
+
+.box .logo-center img {
+  max-width: 60px; /* Sesuaikan ukuran logo */
+  height: auto;
+  background: #0080c0, #87CEEB;
+  transition: .5s;
+} 
+
+.fa-comment-alt {
+  margin-top: 20px; /* Berikan jarak atas dari kotak login */
+  color: #555; /* Warna teks sesuai kebutuhan */
+  font-size: 14px;
+}
+
+.fa-comment-alt a {
+  color: #007bff; /* Warna tautan sesuai kebutuhan */
+  text-decoration: underline; /* Beri garis bawah pada tautan */
+  margin-left: 5px; /* Berikan jarak antara teks dan tautan */
+}
