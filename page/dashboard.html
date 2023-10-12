@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Boxicons CSS -->
     <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet" />
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Dashboard</title>
   </head>
@@ -49,13 +49,27 @@
             <span class="link-name">Panduan</span>
           </a>
         </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-log-out"></i>
+            <span class="link-name">Logout</span>
+          </a>
+        </li>
       </ul>
-      <div class="profile-detail">
-        <div class="profile content">
-          <span class="link-name">Profile</span>
-          <img src="" alt="" />
-        </div>
-      </div>
     </div>
+    <!-- home section -->
+    <section class="home-section">
+      <nav>
+        <div class="sidebar-button">
+          <i class="bx bx-menu"></i>
+          <span class="dashboard">Dashboard</span>
+        </div>
+        <div class="profile-detail">
+          <span class="user-name">Barkomet</span>
+          <!-- <img src="/img/user.png" alt="" /> -->
+          <i class="bx bx-chevrons-down"></i>
+        </div>
+      </nav>
+    </section>
   </body>
 </html>

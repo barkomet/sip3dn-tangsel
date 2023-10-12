@@ -46,6 +46,7 @@
 
 /* Gaya tautan navigasi */
 .sidebar .nav-link {
+    margin-top: 16px;
     height: 100%;
     padding-top: 30px;
     background: #157ce4;
@@ -64,7 +65,7 @@
 }
 
 /* Ikon pada setiap item daftar navigasi */
-.sidebar .nav-link li i {
+.sidebar .nav-link li a i {
     height: 50px;
     min-width: 78px;
     text-align: center;
@@ -86,6 +87,37 @@
     font-weight: 400;
     color: #fff;
 }
+/* Gaya tautan dashboard */
+.home-section {
+    background: #f5f5f5;
+    position: relative;
+    height: 100%;
+    min-height: 100vh;
+    width: calc(100% - 240px);
+    left: 240px;
+    z-index: -1;
+}
+/* Gaya nav dashboard */
+.home-section nav {
+    height: 80px;
+    background: #fff;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Gaya nav button*/
+.home-section nav .sidebar.button {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+.home-section nav .sidebar.button .dashboard {
+    font-size: 35px;
+    margin-right: 10px;
+}
+
 
 /* Gaya submenu */
 .sidebar .nav-link .sub-menu {
