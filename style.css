@@ -1,35 +1,33 @@
-/* Reset default margin and padding for all elements */
+/* Reset beberapa default browser styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  /* Set the background color */
-  body {
+    list-style: none;
+    text-decoration: none;
+}
+/* Set the background color */
+body {
     background: linear-gradient(to bottom, #87CEEB, #1E90FF); /* Warna biru laut */
     font-family: 'Poppins', sans-serif;
-  }
-
-  /* Center the login section vertically */
-  #login {
+}
+/* Center the login section vertically */
+#login {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 90vh;
-  }
-  
-  /* Style the container */
-  .container {
+}
+ /* Style the container */
+.container {
     background-color: #fff; /* Warna latar belakang putih */
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     padding: 70px;
     text-align: center;
     max-width: 400px;
-  }
-  
+}
   /* Style the title */
   .container h2 {
     font-size: 24px;
@@ -188,3 +186,4 @@
   text-decoration: underline; /* Beri garis bawah pada tautan */
   margin-left: 5px; /* Berikan jarak antara teks dan tautan */
 }
+

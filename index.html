@@ -4,10 +4,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Author" content="SignUp-Form" />
+    <meta name="Author" content="LOGIN" />
     <meta name="SIP3DN" content="Home" />
     <title>Selamat Datang | SIP3DN TANGSEL</title>
+    <!-- custom css link -->
     <link rel="stylesheet" href="style.css" />
+    <!-- custom font google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,6 +18,11 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet" />
+    <!-- boxicons link -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+
     <!-- script bwt password -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -62,12 +69,10 @@
           </h2>
           <p class="font-poppins font-medium mb-4 text-base">LOGIN</p>
           <div>
-            <form action="pages/dashboard.html" class="mb-4">
+            <form action="page/dashboard.html" class="mb-4">
               <input
                 type="text"
                 placeholder="Username"
-                name=""
-                id=""
                 class="border py-3 px-3 w-full rounded-md border-gray-400 mb-3 placeholder:font-poppins font-poppins font-medium placeholder:font-normal"
                 required />
               <div class="relative mb-5">
@@ -81,7 +86,7 @@
                 <div
                   class="absolute -top-3.5 inset-y-0 right-0 flex items-center pr-3">
                   <span class="text-gray-500 cursor-pointer toggle-password">
-                    <i class="fas fa-eye"></i>
+                    <i class="bx bx-lock-alt"></i>
                   </span>
                 </div>
               </div>
@@ -89,12 +94,12 @@
                 <button-login
                   class="py-3 px-3 bg-gradient-to-tr from-purple-600 to-indigo-400 rounded-md w-full font-poppins font-semibold text-white"
                   type="submit">
-                  <a href="/pages/dashboard.html">LOGIN</a>
+                  <a href="page/dashboard.html">LOGIN</a>
                 </button-login>
               </div>
               <footer class="fa-comment-alt">
                 Belum punya akun?, klik
-                <a href="/pages/form login/login.html">Here</a>
+                <a href="page/register.html">Here</a>
               </footer>
             </form>
           </div>
