@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Author" content="LOGIN" />
     <meta name="SIP3DN" content="Home" />
-    <title>Selamat Datang | SIP3DN TANGSEL</title>
     <!-- custom css link -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <!-- custom font google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,96 +21,87 @@
     <link
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
-
-    <!-- script bwt password -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const passwordInput = document.querySelector('input[type="password"]');
-        const togglePassword = document.querySelector(".toggle-password");
-
-        togglePassword.addEventListener("click", function () {
-          if (passwordInput.type === "password") {
-            passwordInput.type = "text";
-          } else {
-            passwordInput.type = "password";
-          }
-        });
-      });
-    </script>
-    <!-- script selesai -->
+    <title>Selamat Datang | SIP3DN TANGSEL</title>
   </head>
-  <!-- head selesai -->
-  <!-- body -->
   <body>
-    <!-- header -->
     <header>
-      <div class="box">
-        <!-- Logo di atas kiri -->
-        <div class="logo-left">
-          <img src="./img/logo kiri.png" alt="Logo Kiri" width="100" />
-        </div>
-        <!-- Logo di atas kanan -->
-        <div class="logo-right">
-          <img src="./img/logo kanan.png" alt="Logo Kanan" width="100" />
-        </div>
-        <div class="logo-center">
-          <img src="./img/logo tengah.png" alt="Logo Tengah" width="100" />
-        </div>
+      <!-- untuk logo kiri atas -->
+      <div class="logo">
+        <img src="./img/logo-kanan.png" alt="LogoKanan" />
+        <img src="./img/logo-tengah.png" alt="LogoTengah" />
+        <img src="./img/logo-kiri.png" alt="LogoKiri" />
       </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="icon-menu">
+          <i class="bx bx-menu" id="menu-icon"></i>
+          <i class="bx bx-x" id="close-icon"></i>
+        </label>
+      
+      <!-- untuk navbar -->
+      <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Guide</a>
+        <button class="btnLogin-popup">Login</button>
+      </nav>
     </header>
-    <!-- header selesai-->
-    <!-- form login-->
-    <section id="login">
-      <div class="container mx-auto px-2 lg:w-[60rem]">
-        <div class="flex justify-center items-center h-screen">
-          <h2 class="font-bold font-rubik text-4xl text-black mb-3">
-            SIP3DN TANGSEL
-          </h2>
-          <p class="font-poppins font-medium mb-4 text-base">LOGIN</p>
-          <div>
-            <form action="page/dashboard.html" class="mb-4">
-              <input
-                type="text"
-                placeholder="Username"
-                class="border py-3 px-3 w-full rounded-md border-gray-400 mb-3 placeholder:font-poppins font-poppins font-medium placeholder:font-normal"
-                required />
-              <div class="relative mb-5">
-                <input
-                  type="password"
-                  placeholder="Password"
-                  name=""
-                  id=""
-                  class="border py-3 px-3 w-full rounded-md border-gray-400 mb-4 placeholder:font-poppins font-poppins font-medium placeholder:font-normal"
-                  required />
-                <div
-                  class="absolute -top-3.5 inset-y-0 right-0 flex items-center pr-3">
-                  <span class="text-gray-500 cursor-pointer toggle-password">
-                    <i class="bx bx-lock-alt"></i>
-                  </span>
-                </div>
-              </div>
-              <div class="button-container">
-                <button-login
-                  class="py-3 px-3 bg-gradient-to-tr from-purple-600 to-indigo-400 rounded-md w-full font-poppins font-semibold text-white"
-                  type="submit">
-                  <a href="page/dashboard.html">LOGIN</a>
-                </button-login>
-              </div>
-              <footer class="fa-comment-alt">
-                Belum punya akun?, klik
-                <a href="page/register.html">Here</a>
-              </footer>
-            </form>
+    <!-- untuk form login -->
+    <div class="wrapper">
+      <span class="icon-close"><i class="bx bx-x"></i></span>
+      <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="input-box">
+            <i class="bx bxs-envelope"></i>
+            <input type="text" required />
+            <label>Username</label>
           </div>
-        </div>
+          <div class="input-box">
+            <i class="bx bxs-lock-alt"></i>
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <div class="remember-forget">
+            <label><input type="checkbox" />Ingat Saya</label>
+            <a href="#">Lupa Password?</a>
+          </div>
+          <button type="submit" class="btn">Login</button>
+          <div class="login-register">
+            <p>Belum Punya Akun?<a href="#" class="register-link">Daftar</a></p>
+          </div>
+        </form>
       </div>
-    </section>
-  </body>
-  <!-- footer -->
-  <footer class="footer">
-    <div class="container.fa-10x">
-      <p>&copy; 2023 Barkomet. Hak Cipta Dilindungi Undang-Undang.</p>
+      <!-- untuk form register -->
+      <div class="form-box register">
+        <h2>Buat Akun</h2>
+        <form action="#">
+          <div class="input-box">
+            <i class="bx bx-user"></i>
+            <input type="text" required />
+            <label>Username</label>
+          </div>
+          <div class="input-box">
+            <i class="bx bxs-envelope"></i>
+            <input type="text" required />
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <i class="bx bxs-lock-alt"></i>
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <div class="remember-forget">
+            <label><input type="checkbox" />Setuju dengan Persyaratan</label>
+            <a href="#">Lupa Password?</a>
+          </div>
+          <button type="submit" class="btn">Daftar</button>
+          <div class="login-register">
+            <p>Sudah Punya Akun? <a href="#" class="login-link">Login</a></p>
+          </div>
+        </form>
+      </div>
     </div>
-  </footer>
-  <!-- footer selesai-->
+    <script src="script.js"></script>
+  </body>
 </html>
